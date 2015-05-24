@@ -1,4 +1,9 @@
+# run_analysis.R
+# The code below loads data from test and training sets.  The data is merged and a subset is created 
+# containing only the measurements on the mean and standard deviation for each measurement.
+# The output of the script is a file with the average of each variable for each activity and each subject.
 
+## Check if libraries dplyr and data.table are installed.
 if (!require("dplyr")) {
   install.packages("dplyr")
 }
@@ -25,13 +30,11 @@ features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, colClasse
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, colClasses="character")[,2]
 
 ## 1. Merges the training and the test sets to create one data set.
-
 subject <- rbind(subject_train, subject_test) #subject
 X <- rbind(X_train, X_test) #features
 y <- rbind(y_train, y_test) #activity
 
 merged <- cbind(subject,y,X)
-
 
 columnNames <- c("Subject","Activity",features)
 colnames(merged) <- columnNames

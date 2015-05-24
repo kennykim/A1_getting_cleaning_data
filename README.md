@@ -1,4 +1,4 @@
-# README ASSIGNMENT1
+# README ASSIGNMENT 1 - Getting and Cleaning Data Course
 
 This document describes the requirements to complete the assignment 1.
 

@@ -1,4 +1,4 @@
-# CodeBook ASSIGNMENT1
+# CodeBook ASSIGNMENT 1 - Getting and Cleaining Data Course
 
 This document describes the variables, the data, and any transformations or work performed to clean up the data
 
