@@ -55,7 +55,6 @@ for (act in activity_labels) {
 #4. Appropriately labels the data set with descriptive variable names.
 names(subset_mean_std)<-gsub("-mean()", "Mean", names(subset_mean_std), ignore.case = TRUE)
 names(subset_mean_std)<-gsub("-std()", "Std", names(subset_mean_std), ignore.case = TRUE)
-names(subset_mean_std)<-gsub("-freq()", "Frequency", names(subset_mean_std), ignore.case = TRUE)
 
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each 
 #variable for each activity and each subject.
